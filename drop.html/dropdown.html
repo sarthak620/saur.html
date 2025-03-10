@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: #00080dc7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 400px;
+        }
+
+         .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        } 
+
+        .dropdown-content a {
+            background-color: chartreuse;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block; 
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ea1414;
+        }
+
+        .dropdown:hover .dropdown-content {
+             display: block;    
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown-button">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+        </div>
+    </div>
+
+</body>
+</html>

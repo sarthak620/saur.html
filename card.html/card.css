@@ -1,0 +1,29 @@
+
+body{
+    display: flex; 
+    flex-direction: row; 
+    height: 100vh;
+}
+.card{
+    display: flex; 
+    /* flex-direction: row; */
+    justify-content: space-between
+    
+    ;
+    height:500px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.crad-image{
+    height: 300px;
+    width: 100%;
+    background-image: url("../card3.jpg");
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
